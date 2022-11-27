@@ -1,13 +1,14 @@
 class Movimiento:
     
     def __init__(self, _id, user_id, minutos_SLM_usados, SMS_usados, msje_wsp_usados, horas_agente_usada, puntos_premios_agente):
-        self._id: _id
-        self.user_id: user_id
-        self.minutos_SLM_usados: minutos_SLM_usados
-        self.SMS_usados: SMS_usados
-        self.msje_wsp_usados: msje_wsp_usados
-        self.horas_agente_usadas: horas_agente_usada
-        self.puntos_premio_agente: puntos_premios_agente
+        self._id= _id
+        self.user_id= user_id
+        self.minutos_SLM_usados= minutos_SLM_usados
+        self.SMS_usados= SMS_usados
+        self.msje_wsp_usados= msje_wsp_usados
+        self.horas_agente_usadas= horas_agente_usada
+        self.puntos_premio_agente= puntos_premios_agente
+        pass
 
     #Get function
     

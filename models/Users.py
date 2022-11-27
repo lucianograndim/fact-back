@@ -16,7 +16,7 @@ class users:
         self.pais: pais
         self.celular: celular
         self.puntos_kap: puntos_kap
-    
+        pass
     #Get functions
 
     def GetId(self):

@@ -1,12 +1,19 @@
 class Empresa:
 
     def __init__(self, _id:int, nombre:str, rut:str, direccion:str, pais:str, representante_legal:str):
-        self._id: _id
-        self.nombre: nombre
-        self.rut: rut
-        self.direccion: direccion
-        self.pais: pais
-        self.representante_legal: representante_legal
+        self._id: int
+        self.nombre: str
+        self.rut: str
+        self.direccion: str
+        self.pais: str
+        self.representante_legal: str
+        self._id= _id
+        self.nombre= nombre
+        self.rut= rut
+        self.direccion= direccion
+        self.pais= pais
+        self.representante_legal= representante_legal
+        pass
 
     #Get function
 
@@ -14,19 +21,21 @@ class Empresa:
         return self._id
 
     def Getnombre(self):
-        return self.nombre
+        print(self.nombre)
+        x=self.nombre
+        return x
 
     def GetRut(self):
-        return self.rut
+        return str(self.rut)
 
     def GetDireccion(self):
-        return self.direccion
+        return str(self.direccion)
     
     def GetPais(self):
-        return self.pais
+        return str(self.pais)
     
     def GetRepres(self):
-        return self.representante_legal
+        return str(self.representante_legal)
 
     #Set function
 
@@ -48,4 +57,3 @@ class Empresa:
     def SetRepres(self, nRepres):
         self.representante_legal = nRepres
 
-    

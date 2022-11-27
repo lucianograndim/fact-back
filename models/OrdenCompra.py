@@ -5,7 +5,7 @@ class OrdenCompra:
         self.user_id: user_id
         self.monto_oc: monto_oc
         self.fecha_oc: fecha_oc
-
+        pass
     #Get function
 
     def GetId(self):
