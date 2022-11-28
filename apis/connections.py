@@ -1,6 +1,14 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS, cross_origin
-from Users import *
+
+from models.Boleta import *
+from models.Discrepancia import *
+from models.Empresa import *
+from models.Fact import *
+from models.Movimiento import *
+from models.OrdenCompra import *
+from models.Ticket import *
+from models.Users import *
 
 application = Flask(__name__)
 application.config['JSON_AS_ASCII'] = False
