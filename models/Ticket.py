@@ -1,14 +1,15 @@
 class Ticket:
 
     def __init__(self, _id, nombre, email, telefono, tipo_telf, pais, asunto, mensaje):
-        self._id: _id
-        self.nombre: nombre
-        self.email: email
-        self.telefono: telefono
-        self.tipo_telf: tipo_telf
-        self.pais: pais
-        self.asunto: asunto
-        self.mensaje: mensaje
+        self._id= _id
+        self.nombre= nombre
+        self.email= email
+        self.telefono= telefono
+        self.tipo_telf= tipo_telf
+        self.pais= pais
+        self.asunto= asunto
+        self.mensaje= mensaje
+        pass
     
     #Get function
 

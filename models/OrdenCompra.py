@@ -1,10 +1,10 @@
 class OrdenCompra:
     
     def __init__(self, _id, user_id, monto_oc, fecha_oc):
-        self._id: _id
-        self.user_id: user_id
-        self.monto_oc: monto_oc
-        self.fecha_oc: fecha_oc
+        self._id= _id
+        self.user_id= user_id
+        self.monto_oc= monto_oc
+        self.fecha_oc= fecha_oc
         pass
     #Get function
 

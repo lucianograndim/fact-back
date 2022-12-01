@@ -1,12 +1,13 @@
 class Empresa:
 
     def __init__(self, _id:int, nombre:str, rut:str, direccion:str, pais:str, representante_legal:str):
-        self._id: _id
-        self.nombre: nombre
-        self.rut: rut
-        self.direccion: direccion
-        self.pais: pais
-        self.representante_legal: representante_legal
+        self._id= _id
+        self.nombre= nombre
+        self.rut= rut
+        self.direccion= direccion
+        self.pais= pais
+        self.representante_legal= representante_legal
+        pass
 
     #Get function
 

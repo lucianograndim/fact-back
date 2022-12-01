@@ -1,11 +1,12 @@
 class Discrepancia:
     
     def __init__(self, _id, user_id, fecha_dis, estado_dis, tipo_dis):
-        self._id: _id
-        self.user_id: user_id
-        self.fecha_dis: fecha_dis
-        self.estado_dis: estado_dis
-        self.tipo_dis: tipo_dis
+        self._id= _id
+        self.user_id= user_id
+        self.fecha_dis= fecha_dis
+        self.estado_dis= estado_dis
+        self.tipo_dis= tipo_dis
+        pass
 
     #Get function
 

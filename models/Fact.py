@@ -1,15 +1,16 @@
 class Fact:
     
     def __init__(self,_Id, emprasa_id, tipo, fecha_fact, deposito, estado_fac, divisa_fact, documento, url):
-        self._id: _Id
-        self.empresa_id: emprasa_id
-        self.tipo: tipo
-        self.fecha_fac: fecha_fact
-        self.deposito: deposito
-        self.estado_fac: estado_fac
-        self.divisa_fac: divisa_fact
-        self.documento: documento
-        self.url: url
+        self._id= _Id
+        self.empresa_id= emprasa_id
+        self.tipo= tipo
+        self.fecha_fac= fecha_fact
+        self.deposito= deposito
+        self.estado_fac= estado_fac
+        self.divisa_fac= divisa_fact
+        self.documento= documento
+        self.url= url
+        pass
 
     #Get function
     

@@ -1,12 +1,13 @@
 class Boleta:
 
     def __init__(self, _id, user_id, fecha_bol, monto_boleta, rol_boleta, divisa_bol):
-        self._id: _id
-        self.user_id: user_id
-        self.fecha_bol: fecha_bol
-        self.monto_Boleta: monto_boleta
-        self.rol_boleta: rol_boleta
-        self.divisa_bol: divisa_bol
+        self._id= _id
+        self.user_id= user_id
+        self.fecha_bol= fecha_bol
+        self.monto_Boleta= monto_boleta
+        self.rol_boleta= rol_boleta
+        self.divisa_bol= divisa_bol
+        pass
 
     #Get function
 

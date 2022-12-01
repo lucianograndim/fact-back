@@ -1,6 +1,6 @@
 from pdf import PDF
-from Empresa2 import Empresa
-from Movimiento2 import Movimiento
+from models.Empresa import Empresa
+from models.Movimiento import Movimiento
 import datetime
 
 valor_slm=12

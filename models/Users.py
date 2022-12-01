@@ -1,21 +1,21 @@
 class users:
     
     def __init__(self , _id, usuario, password, salt, rol, nombre,  razon_social, email, fecha_nac, telefono, direccion, empresa_id, pais, celular, puntos_kap):
-        self._id: _id
-        self.usuario: usuario
-        self.password: password
-        self.salt: salt
-        self.rol: rol
-        self.nombre: nombre
-        self.razon_social: razon_social
-        self.email: email
-        self.fecha_nac: fecha_nac
-        self.telefono: telefono
-        self.direccion: direccion
-        self.empresa_id: empresa_id
-        self.pais: pais
-        self.celular: celular
-        self.puntos_kap: puntos_kap
+        self._id= _id
+        self.usuario= usuario
+        self.password= password
+        self.salt= salt
+        self.rol= rol
+        self.nombre= nombre
+        self.razon_social= razon_social
+        self.email= email
+        self.fecha_nac= fecha_nac
+        self.telefono= telefono
+        self.direccion= direccion
+        self.empresa_id= empresa_id
+        self.pais= pais
+        self.celular= celular
+        self.puntos_kap= puntos_kap
         pass
     #Get functions
 
