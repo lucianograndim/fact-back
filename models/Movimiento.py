@@ -1,6 +1,6 @@
 class Movimiento:
     
-    def __init__(self, _id, user_id, minutos_SLM_usados, SMS_usados, msje_wsp_usados, horas_agente_usada, puntos_premios_agente):
+    def __init__(self, _id, user_id, minutos_SLM_usados, SMS_usados, msje_wsp_usados, horas_agente_usada, puntos_premios_agente, fecha):
         self._id= _id
         self.user_id= user_id
         self.minutos_SLM_usados= minutos_SLM_usados
@@ -8,6 +8,7 @@ class Movimiento:
         self.msje_wsp_usados= msje_wsp_usados
         self.horas_agente_usadas= horas_agente_usada
         self.puntos_premio_agente= puntos_premios_agente
+        self.fechaUP = fecha
         pass
 
     #Get function
@@ -32,6 +33,9 @@ class Movimiento:
 
     def GetPuntos(self):
         return self.puntos_premio_agente
+    
+    def GetFecha(self):
+        return self.fecha
 
     #Set function
 
@@ -55,3 +59,6 @@ class Movimiento:
 
     def SetPuntos(self, nPuntos):
          self.puntos_premio_agente = nPuntos
+    
+    def SetFecha(self, nFecha):
+        self.fechaUP= nFecha

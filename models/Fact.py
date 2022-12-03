@@ -1,8 +1,8 @@
 class Fact:
     
-    def __init__(self,_Id, emprasa_id, tipo, fecha_fact, deposito, estado_fac, divisa_fact, documento, url):
+    def __init__(self,_Id, empresa_id, tipo, fecha_fact, deposito, estado_fac, divisa_fact, documento, url):
         self._id= _Id
-        self.empresa_id= emprasa_id
+        self.empresa_id= empresa_id
         self.tipo= tipo
         self.fecha_fac= fecha_fact
         self.deposito= deposito

@@ -1,6 +1,6 @@
 class Ticket:
 
-    def __init__(self, _id, nombre, email, telefono, tipo_telf, pais, asunto, mensaje):
+    def __init__(self, _id, nombre, email, telefono, tipo_telf, pais, asunto, mensaje,fecha):
         self._id= _id
         self.nombre= nombre
         self.email= email
@@ -9,6 +9,7 @@ class Ticket:
         self.pais= pais
         self.asunto= asunto
         self.mensaje= mensaje
+        self.fechaUP= fecha
         pass
     
     #Get function
@@ -37,6 +38,9 @@ class Ticket:
     def GetMensaje(self):
         return self.mensaje
 
+    def GetFecha(self):
+        return self.fechaUP
+
     #Set function
 
     def SetId(self, nId):
@@ -62,3 +66,6 @@ class Ticket:
 
     def SetMensaje(self, nMensaje):
         self.mensaje = nMensaje
+
+    def SetFecha(self, nFecha):
+        self.fechaUP= nFecha
