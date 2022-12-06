@@ -4,19 +4,21 @@ services:
   api:
     container_name: fact-back
     image: python
-    environment:
-      - MONGO_URI=mongodb://mongo:27017/todos
-      - APP_PORT=5000
-      - DEBUG=1
+    build:
+      context: .
+      dockerfile: ./Dockerfile
     depends_on:
       - mongo
     volumes:
       - .:/api
-    ports: ["5000:5000"]
-    tty: true
+    env_file:
+      - .env.local
+    environment:
+      - PORT=5050
 
   mongo:
     container_name: mongo-db
     image: mongo
     volumes:
       - "./db:/data/db"
+

@@ -1,9 +1,10 @@
 from flask import Flask, jsonify, request
 from flask_pymongo import PyMongo, ObjectId
-from os import environ
+from os import getenv
+from dotenv import load_dotenv
 
 app = Flask(__name__)
-app.config["MONGO_URI"] = environ.get("MONGO_URI")
+app.config["MONGO_URI"] = getenv("MONGO_URI")
 mongo = PyMongo(app)
 db = mongo.db
 
@@ -77,10 +78,11 @@ def deleteTodo(todo_id):
     return jsonify(), 204
 
 
-if __name__ == "__main__":
-    ENVIRONMENT_DEBUG = environ.get("APP_DEBUG", True)
-    ENVIRONMENT_PORT = environ.get("APP_PORT", 5000)
-    app.run(host='0.0.0.0', port=ENVIRONMENT_PORT, debug=ENVIRONMENT_DEBUG)
+
+if __name__ == '__main__':
+    # inicializamos el servidor flask con el puerto 4043
+    # (este puerto debe ser cambiado al momento de probar en maquina de desarrollo)
+    app.run(host=getenv("APP_HOST"), port=getenv("APP_PORT"), debug=True)
 
 
 
