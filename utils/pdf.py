@@ -1,7 +1,7 @@
 from fpdf import FPDF
 
-class PDF(FPDF):
 
+class PDF(FPDF):
     def lines(self):
         self.set_fill_color(155.0, 155, 155.0)
         self.rect(5.0, 5.0, 205.9,270.4,'DF')
@@ -9,7 +9,7 @@ class PDF(FPDF):
         self.rect(8.0, 8.0, 199.9,265.4,'FD')
     def imagex(self):
         self.set_xy(10.0,9.0)
-        self.image('alloxentric_logo-3x.png',  link='', type='', w=1580/40, h=1000/80)
+        self.image('fffff.png', link='', type='', w=1580/40, h=1000/80)
 
     def titles(self):
         self.set_xy(0.0,0.0)
